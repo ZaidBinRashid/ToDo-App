@@ -98,6 +98,8 @@ h1::after {
 }
 
 .taskItem {
+  display: flex;
+  justify-content: space-between;
   padding: 0.9rem 1rem;
   background: var(--task-bg);
   border: 1.5px solid var(--border);
@@ -105,6 +107,12 @@ h1::after {
   color: var(--ink);
   font-size: 0.9rem;
   transition: background 0.15s;
+}
+
+.checkBoxBtn{
+  border: none;
+  height: 13px;
+  width: 13px;
 }
 
 .taskItem:last-child {
