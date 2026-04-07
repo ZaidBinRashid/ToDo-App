@@ -118,6 +118,7 @@ function displayTask() {
                     `,
     )
     .join("");
+    
 }
 
 // ── Run displayTask on page load ──
@@ -127,5 +128,9 @@ displayTask();
 
 function taskStatus(){
   const checkBtn = document.querySelectorAll(".checkBoxBtn")
-
+  const  getTask = JSON.parse(localStorage.getItem('task')) 
+  console.log(getTask["completed"]);
+  
 }
+
+taskStatus()
